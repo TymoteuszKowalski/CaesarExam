@@ -12,4 +12,9 @@ public class SzyfrCezaraTest {
     public void testZawijanieAlfabetu() {
         Assertions.assertEquals("abc", main.szyfrujTekst("xyz", 3));
     }
+
+    @Test
+    public void testKluczUjemny() {
+        Assertions.assertEquals("abc", main.szyfrujTekst("def", -3));
+    }
 }
