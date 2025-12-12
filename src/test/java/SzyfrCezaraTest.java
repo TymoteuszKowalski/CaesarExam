@@ -17,4 +17,14 @@ public class SzyfrCezaraTest {
     public void testKluczUjemny() {
         Assertions.assertEquals("abc", main.szyfrujTekst("def", -3));
     }
+
+    @Test
+    public void testKluczWiekszyNizAlfabet() {
+        Assertions.assertEquals("def", main.szyfrujTekst("abc", 29));
+    }
+
+    @Test
+    public void testSpacjaWTekscie() {
+        Assertions.assertEquals("cd ef", main.szyfrujTekst("ab cd", 2));
+    }
 }
