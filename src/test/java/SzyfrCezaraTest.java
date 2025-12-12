@@ -8,4 +8,8 @@ public class SzyfrCezaraTest {
         Assertions.assertEquals("def", main.szyfrujTekst("abc", 3));
     }
 
+    @Test
+    public void testZawijanieAlfabetu() {
+        Assertions.assertEquals("abc", main.szyfrujTekst("xyz", 3));
+    }
 }
